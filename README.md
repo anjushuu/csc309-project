@@ -1,4 +1,4 @@
-## Restify
+# Restify 🐒🛏️✨🌙
 
-# Phase 1: HTML + CSS
+## Phase 1: HTML + CSS
 <li> run static page in browser </li>
