@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="/dist/output.css" rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+    <!-- nav bar -->
+  <header>
+      <nav class="bg-lightgreen text-gray-700">
+          <!-- flex box for whole bar -->
+        <div class="flex mx-5 justify-between">
+            <!-- primary links -->
+            <div class="flex space-x-1 items-center">
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen font-bold" id="index" href="index.html">Search</a>
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="listings" href="listings.html">My Listings</a>
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="bookings" href="bookings.html">My Bookings</a>
+            </div>
+
+            <!-- secondary links -->
+            <div class="flex space-x-1 items-center">
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="log out" href="index.html">Log Out</a>
+                <!-- change this to icon later -->
+                <button class="flex items-center py-2 px-5 bg-darkgreen hover:bg-white text-white hover:text-darkgreen rounded" href="#"> Profile </button>
+            </div>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+      <div class="p-5 flex">
+        <!-- left menu column div -->
+        <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
+            <!-- left menu contents -->
+            <a class="self-start" href="listings.html"> My Rental Listings </a>
+            <a class="self-start font-bold text-darkgreen"> My Reservations </a> 
+            <a> Pending </a>
+            <a> Denied </a>
+            <a> Expired </a>
+            <a> Approved </a>
+            <a> Canceled </a>
+            <a> Terminated </a>
+            <a> Completed </a>
+            <a class="self-start"> My Comments </a> 
+            <a class="self-start"> Settings </a>
+        </div>
+
+        <!-- main contents of page -->
+        <div class="w-5/6 pl-5 flex flex-col items-start gap-5">
+                <!-- profile photo overlayed on top of cover photo which doesnt work rn -->
+                <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black z-10 m-5"></div>
+
+            <h1 class="font-bold text-2xl m-5"> My Reservations: </h1>
+        </div>
+
+      </div>
+  </main>
+
+</body>
+</html>
