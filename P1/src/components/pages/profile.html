@@ -66,7 +66,7 @@
                         </div>
 
                         <div class="self-end ml-2">
-                            <button class="text-darkgreen hover:bg-midgreen border-darkgreen rounded"> edit </button>
+                            <button class="text-darkgreen bg-lightgreen  hover:bg-darkgreen rounded py-0.25 px-2 items-center hover:text-white"> edit </button>
                             <p> 123-123-1234</p>
                         </div>
                 </div>
@@ -77,9 +77,9 @@
             <h1 class="font-bold text-2xl mb-3"> My Rental Listings: </h1>
 
             <!-- div for rental listing boxes horizontal scroll -->
-            <div class="flex gap-3 snap-mandatory snap-x">
+            <div class="flex gap-3 overflow-x-auto">
                 <!-- div for individual box-->
-                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col snap-center"> 
+                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
                     <!-- make the inside of every box a flex box with 2 rows -->
                         <div class="h-1/2 overflow-hidden">
                             <img class="object-cover w-full h-full object-bottom rounded-t-[10px]" src="https://i.pinimg.com/564x/bd/35/b8/bd35b85d0b34cfc0ba17bc11e1b90508.jpg">
@@ -117,7 +117,7 @@
 
 
                     <!-- div for individual box-->
-                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col snap-center"> 
+                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
                     <!-- make the inside of every box a flex box with 2 rows -->
                         <div class="h-1/2 overflow-hidden">
                             <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/b6/69/f1/b669f19012abdf83f35c8d5b971ad9df.jpg">
@@ -154,7 +154,7 @@
                 </div>
 
                 <!-- div for individual box-->
-                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col snap-center"> 
+                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
                     <!-- make the inside of every box a flex box with 2 rows -->
                         <div class="h-1/2 overflow-hidden">
                             <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
@@ -191,48 +191,55 @@
                 </div>
 
                 <!-- div for individual box-->
-                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col snap-center"> 
+                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
                     <!-- make the inside of every box a flex box with 2 rows -->
-                        <div class="h-1/2 overflow-hidden">
-                            <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/4f/80/7c/4f807c68323c59167143bad9c8f0a4c3.jpg">
-                        </div>
+                    <div class="h-1/2 overflow-hidden">
+                        <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/4f/80/7c/4f807c68323c59167143bad9c8f0a4c3.jpg">
+                    </div>
 
-                        <!-- flex box for bottom half of box text-->
-                        <div class="h-1/2 p-3">
-                            <div>
-                                <!-- div for title and rating -->
-                                <div class="flex justify-between">
-                                    <p class="text-[13px] mb-2"> Bath House (1 Bed 1 Bath) </p>
-                                    <div class="flex">
-                                        <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                                        <p class="text-xs bold ml-1 "> 4.5 </p>
-                                        <p class="text-xs ml-0.5"> (67) </p>
-                                    </div>
+                    <!-- flex box for bottom half of box text-->
+                    <div class="h-1/2 p-3">
+                        <div>
+                            <!-- div for title and rating -->
+                            <div class="flex justify-between">
+                                <p class="text-[13px] mb-2"> Bath House (1 Bed 1 Bath) </p>
+                                <div class="flex">
+                                    <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
+                                    <p class="text-xs bold ml-1 "> 4.5 </p>
+                                    <p class="text-xs ml-0.5"> (67) </p>
                                 </div>
-
-                                <!-- div for left half, includes icons address and cost-->
-                                <div class="flex gap-2">
-                                    <div class="flex flex-col gap-y-1 justify-evenly"> 
-                                        <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                                        <i class="fa-solid fa-coins fa-xs"></i>
-                                    </div>
-                                    <div class="flex flex-col gap-y-1 grow">
-                                        <p class="text-xs">123 Bath Street, Bath, England </p> 
-                                        <p class="text-xs"> $99 / night</p>
-                                    </div>
-                                    <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                                </div>
-                            
                             </div>
+
+                            <!-- div for left half, includes icons address and cost-->
+                            <div class="flex gap-2">
+                                <div class="flex flex-col gap-y-1 justify-evenly"> 
+                                    <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
+                                    <i class="fa-solid fa-coins fa-xs"></i>
+                                </div>
+                                <div class="flex flex-col gap-y-1 grow">
+                                    <p class="text-xs">123 Bath Street, Bath, England </p> 
+                                    <p class="text-xs"> $99 / night</p>
+                                </div>
+                                <div class="text-xs text-midgreen underline flex self-end"> see more </div>
+                            </div>
+                        
                         </div>
+                    </div>
                 </div>
 
-            </div>
+                <!-- div for add section box-->
+                <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow shrink-0 grid grid-cols-1 place-content-center justify-items-center"> 
+                    <i class="fa-solid fa-square-plus fa-5x mb-2"></i>
+                    <p> Add a new listing </p>
+                </div>
+
 
             </div>
 
+        </div>
 
-            <h1 class="font-bold text-2xl"> My Reservations: </h1>
+
+        <h1 class="font-bold text-2xl"> My Reservations: </h1>
         </div>
 
       </div>
