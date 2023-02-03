@@ -7,10 +7,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="/dist/output.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/tom-select/dist/css/tom-select.css" rel="stylesheet"/>
+
+  <script src="https://kit.fontawesome.com/6f36eef116.js" crossorigin="anonymous"></script>
   
  
 </head>
-<body>
+<body class="space-y-5 tracking-tightest">
     <!-- nav bar -->
   <header>
       <nav class="bg-lightgreen text-gray-700">
@@ -33,7 +36,86 @@
   </header>
 
   <main>
-      <h1>search page</h1>
+    <main>
+      <div class="flex justify-between items-center columns-3xs gap-5 h-screen md:h-[85vh] flex-wrap md:flex-nowrap">
+        <div class="flex justify-center items-center h-full w-full py-10 px-10 bg-gradient-to-t from-[#C1D8BD] to-[#CAE7E9] font-semibold text-4xl rounded-r-2xl">Find your next vacation</div>
+        <div class="flex flex-col justify-center items-center h-full w-full py-10 px-10 bg-gray-100 rounded-l-2xl shadow-md">
+
+          <!-- input grid -->
+          <form class="w-full max-w-lg">
+
+            <!-- location input -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <div class="w-full px-3">
+                <label class="block text-gray-700 text-xl font-semibold mb-2" for="grid-location">
+                  Location
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-[#8FC6EA]" id="grid-location" type="text" placeholder="Where are you headed?">
+                <!-- <p class="text-red-500 text-xs italic">Please fill out this field.</p> -->
+              </div>
+            </div>
+
+            <!-- checkin/checkout/guests  -->
+            <div class="flex flex-wrap -mx-3 mb-6">
+              <!-- checkin -->
+              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <label class="block text-gray-700 text-xl font-semibold mb-2" for="grid-checkin">
+                  Check-In
+                </label>
+
+                <div class="relative">
+                  <input type="date" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-[#8FC6EA]" id="grid-checkin" required pattern="\d{4}-\d{2}-\d{2}" />
+                </div>
+              </div>
+              
+              <!-- checkout -->
+              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <label class="block text-gray-700 text-xl font-semibold mb-2" for="grid-checkout">
+                  Check-Out
+                </label>
+                <div class="relative">
+                  <input type="date" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 rounded leading-tight focus:outline-none focus:bg-white focus:border-[#8FC6EA]" id="grid-checkout" required pattern="\d{4}-\d{2}-\d{2}" />
+                </div>
+              </div>
+
+              <!-- num guests -->
+              <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                <label class="block text-gray-700 text-xl font-semibold mb-2" for="grid-num-guests">
+                  Guests
+                </label>
+                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#8FC6EA]" id="grid-num-guests" type="text" placeholder="">
+              </div>
+            </div>
+            
+            <!-- amenities -->
+            <div class="flex flex-wrap -mx-3 mb-10">
+              <div class="w-full px-3">
+                <label class="block text-gray-700 text-xl font-semibold mb-2" for="grid-amenities">
+                  Amenities
+                </label>
+                <div class="relative">
+                  <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-[#8FC6EA]" id="grid-amenities" name="amenities[]">
+                    <option value="wifi">Wi-Fi</option>
+                    <option value="pets">Pets Allowed</option>
+                    <option value="kitchen">Kitchen Included</option>
+                    <option value="parking">Free Parking</option>
+                  </select>
+                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+          <!-- submit -->
+          <div class="flex items-end">
+            <a class="py-2 px-5 bg-darkgreen hover:bg-white text-white hover:text-darkgreen rounded" href="searchresults.html">Search</a>
+          </div>
+  
+        </div>
+      </div> 
+    </main>
   </main>
 
 </body>
