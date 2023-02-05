@@ -63,335 +63,62 @@
             <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
           </div>
           <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
-            hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> BOOK </a>
+            hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> NEW </a>
         </div>
 
         
 
-        <!-- div for all rental listings-->
-        <div class="w-full mb-2">
-          <!-- div for rental listing heading, view all, and edit button-->
-          <div class="flex items-center mb-3">
-              <h1 class="flex-none font-bold text-2xl"> Pending Reservations: </h1>
-              <a class="text-darkgreen text-[13px] font-semibold flex grow ml-10 hover:text-lightgreen"
-              href="listings.html"> VIEW ALL </a>
-              <div class="flex-none mr-3"> 
-                  <a class="text-darkgreen text-[13px] font-semibold hover:text-lightgreen" href="#"> EDIT 
-                  <i class="fa-solid fa-pen-to-square fa-2xs"></i></a>
-              </div>
-          </div> <!-- end of div for heading and buttons -->
+        <!-- div reservations table -->
+        <div class="mt-5 w-full mb-2 h-auto drop-shadow border rounded-xl overflow-hidden">
+          <!-- reservation table -->
+          <table class="w-full table-auto md:table-fixed">
+            <thead>
+              <tr class="font-semibold text-darkgreen text-left">
+                <th class="border pl-5 py-3"> Listing </th>
+                <th class="border pl-5 py-3"> Dates Reserved </th>
+                <th class="border pl-5 py-3"> Status </th>
+              </tr>
+            </thead>
+            
+            <tbody> 
+              <tr>
+                <td class="border pl-5 py-3"> <a href="#"> General Farm (3 Bed 2 Bath) </a></td>
+                <td class="border pl-5 py-3"> February 14, 2023 - May 4, 2023 </td>
+                <td class="border pl-5 py-3"> Approved </td>
+
+                <tr>
+                  <td class="border pl-5 py-3"> <a href="#"> Grand Cabin (5 Bed 3 Bath) </a></td>
+                  <td class="border pl-5 py-3"> March 24, 2023 - April 1, 2023 </td>
+                  <td class="border pl-5 py-3"> Terminated </td>
+                </tr>
+
+                <tr>
+                  <td class="border pl-5 py-3"> <a href="listing_details.html"> Luxurious Lodge (8 Bed 5 Bath) </a></td>
+                  <td class="border pl-5 py-3"> February 1, 2023 - February 3, 2023 </td>
+                  <td class="border pl-5 py-3"> Pending </td>
+                </tr>
+
+                <tr>
+                  <td class="border pl-5 py-3"> <a href="listing_details.html"> Luxurious Lodge (8 Bed 5 Bath) </a></td>
+                  <td class="border pl-5 py-3"> June 19, 2023 - June 23, 2023 </td>
+                  <td class="border pl-5 py-3"> Approved </td>
+                </tr>
+
+                <tr>
+                  <td class="border pl-5 py-3"> <a href="#"> Bath House (1 Bed 1 Bath) </a></td>
+                  <td class="border pl-5 py-3"> November 25, 2023 - November 27, 2023 </td>
+                  <td class="border pl-5 py-3"> Complete </td>
+                </tr>
+
+              </tr>
+            </tbody>
+          </table>
       
-
-          <!-- div for rental listing boxes horizontal scroll -->
-          <div class="flex gap-3 overflow-x-auto">
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <!-- make the inside of every box a flex box with 2 rows -->
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full object-bottom rounded-t-[10px]" src="https://i.pinimg.com/564x/bd/35/b8/bd35b85d0b34cfc0ba17bc11e1b90508.jpg">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                      <!-- div for title and rating -->
-                      <div class="flex justify-between">
-                          <p class="text-[13px] mb-2"> General Farm (3 Bed 2 Bath) </p>
-                          <div class="flex">
-                              <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                              <p class="text-xs bold ml-1 "> 4.8 </p>
-                              <p class="text-xs ml-0.5"> (101) </p>
-                          </div>
-                      </div>
-
-                      <!-- div for left half, includes icons address and cost-->
-                      <div class="flex gap-2">
-                          <div class="flex flex-col gap-y-1 justify-evenly"> 
-                              <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                              <i class="fa-solid fa-coins fa-xs"></i>
-                          </div>
-                          <div class="flex flex-col gap-y-1 grow">
-                              <p class="text-xs">123 Monke Street, Nara, Japan </p> 
-                              <p class="text-xs"> $499 / night</p>
-                          </div>
-                          <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <!-- make the inside of every box a flex box with 2 rows -->
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/b6/69/f1/b669f19012abdf83f35c8d5b971ad9df.jpg">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                      <!-- div for title and rating -->
-                      <div class="flex justify-between">
-                          <p class="text-[13px] mb-2"> Grand Cabin (5 Bed 3 Bath) </p>
-                          <div class="flex">
-                              <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                              <p class="text-xs bold ml-1 "> 3.2 </p>
-                              <p class="text-xs ml-0.5"> (8) </p>
-                          </div>
-                      </div>
-
-                      <!-- div for left half, includes icons address and cost-->
-                      <div class="flex gap-2">
-                          <div class="flex flex-col gap-y-1 justify-evenly"> 
-                              <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                              <i class="fa-solid fa-coins fa-xs"></i>
-                          </div>
-                          <div class="flex flex-col gap-y-1 grow">
-                              <p class="text-xs">123 Lake Street, Toronto, Canada </p> 
-                              <p class="text-xs"> $623 / night</p>
-                          </div>
-                          <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-              <div class="h-1/2 overflow-hidden">
-                  <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
-              </div>
-
-              <!-- flex box for bottom half of box text-->
-              <div class="h-1/2 p-3">
-                  <!-- div for title and rating -->
-                  <div class="flex justify-between">
-                  <p class="text-[13px] mb-2"> Luxurious Lodge (8 Bed 5 Bath) </p>
-                  <div class="flex">
-                      <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                      <p class="text-xs bold ml-1 "> 5.0 </p>
-                      <p class="text-xs ml-0.5"> (1) </p>
-                  </div>
-                  </div>
-
-                  <!-- div for left half, includes icons address and cost-->
-                  <div class="flex gap-2">
-                  <div class="flex flex-col gap-y-1 justify-evenly"> 
-                      <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                      <i class="fa-solid fa-coins fa-xs"></i>
-                  </div>
-                  <div class="flex flex-col gap-y-1 grow">
-                      <p class="text-xs">123 King Street, London, England </p> 
-                      <p class="text-xs"> $1,999 / night</p>
-                  </div>
-                  <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                  </div>
-              </div> <!-- div end for bottom half of individual box -->
-              </div> <!-- div end for listing box -->
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <!-- make the inside of every box a flex box with 2 rows -->
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/4f/80/7c/4f807c68323c59167143bad9c8f0a4c3.jpg">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                      <!-- div for title and rating -->
-                      <div class="flex justify-between">
-                          <p class="text-[13px] mb-2"> Bath House (1 Bed 1 Bath) </p>
-                          <div class="flex">
-                              <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                              <p class="text-xs bold ml-1 "> 4.5 </p>
-                              <p class="text-xs ml-0.5"> (67) </p>
-                          </div>
-                      </div>
-
-                      <!-- div for left half, includes icons address and cost-->
-                      <div class="flex gap-2">
-                          <div class="flex flex-col gap-y-1 justify-evenly"> 
-                              <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                              <i class="fa-solid fa-coins fa-xs"></i>
-                          </div>
-                          <div class="flex flex-col gap-y-1 grow">
-                              <p class="text-xs">123 Bath Street, Bath, England </p> 
-                              <p class="text-xs"> $99 / night</p>
-                          </div>
-                          <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- div for add section box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow shrink-0 grid grid-cols-1 place-content-center justify-items-center"> 
-                  <i class="fa-solid fa-square-plus fa-5x mb-2"></i>
-                  <p> Add a new listing </p>
-              </div>
-          </div> <!-- end of all rental listings scrolling -->
-      </div> <!-- end of all rental listings section-->
-      
-      <!-- div for all reservations section -->
-      <div class="w-full">
-          <!-- div for reservation heading, view all, and edit button-->
-          <div class="flex items-center mb-3">
-              <h1 class="flex-none font-bold text-2xl"> My Reservations: </h1>
-              <a class="text-darkgreen text-[13px] font-semibold flex grow ml-10 hover:text-lightgreen"
-              href="bookings.html"> VIEW ALL </a>
-              <div class="flex-none mr-3"> 
-                  <a class="text-darkgreen text-[13px] font-semibold hover:text-lightgreen" href="#"> EDIT 
-                  <i class="fa-solid fa-pen-to-square fa-2xs"></i></a>
-              </div>
-          </div> <!-- end of div for heading and buttons -->
-
-          <!-- div for reservation boxes horizontal scroll -->
-          <div class="flex gap-3 overflow-x-auto">
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <!-- make the inside of every box a flex box with 2 rows -->
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full object-bottom rounded-t-[10px]" src="https://i.pinimg.com/564x/bd/35/b8/bd35b85d0b34cfc0ba17bc11e1b90508.jpg">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                          <!-- div for title and rating -->
-                          <div class="flex justify-between">
-                              <p class="text-[13px] mb-2"> General Farm (3 Bed 2 Bath) </p>
-                              <div class="flex">
-                                  <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                                  <p class="text-xs bold ml-1 "> 4.8 </p>
-                                  <p class="text-xs ml-0.5"> (101) </p>
-                              </div>
-                          </div>
-
-                          <!-- div for left half, includes icons address and cost-->
-                          <div class="flex gap-2">
-                              <div class="flex flex-col gap-y-1 justify-evenly"> 
-                                  <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                                  <i class="fa-solid fa-coins fa-xs"></i>
-                              </div>
-                              <div class="flex flex-col gap-y-1 grow">
-                                  <p class="text-xs">123 Monke Street, Nara, Japan </p> 
-                                  <p class="text-xs"> $499 / night</p>
-                              </div>
-                              <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                          </div>
-                  </div>
-              </div>
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <!-- make the inside of every box a flex box with 2 rows -->
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/b6/69/f1/b669f19012abdf83f35c8d5b971ad9df.jpg">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                      <!-- div for title and rating -->
-                      <div class="flex justify-between">
-                          <p class="text-[13px] mb-2"> Grand Cabin (5 Bed 3 Bath) </p>
-                          <div class="flex">
-                              <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                              <p class="text-xs bold ml-1 "> 3.2 </p>
-                              <p class="text-xs ml-0.5"> (8) </p>
-                          </div>
-                      </div>
-
-                      <!-- div for left half, includes icons address and cost-->
-                      <div class="flex gap-2">
-                          <div class="flex flex-col gap-y-1 justify-evenly"> 
-                              <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                              <i class="fa-solid fa-coins fa-xs"></i>
-                          </div>
-                          <div class="flex flex-col gap-y-1 grow">
-                              <p class="text-xs">123 Lake Street, Toronto, Canada </p> 
-                              <p class="text-xs"> $623 / night</p>
-                          </div>
-                          <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                  <!-- div for title and rating -->
-                  <div class="flex justify-between">
-                      <p class="text-[13px] mb-2"> Luxurious Lodge (8 Bed 5 Bath) </p>
-                      <div class="flex">
-                      <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                      <p class="text-xs bold ml-1 "> 5.0 </p>
-                      <p class="text-xs ml-0.5"> (1) </p>
-                      </div>
-                  </div>
-
-                  <!-- div for left half, includes icons address and cost-->
-                  <div class="flex gap-2">
-                      <div class="flex flex-col gap-y-1 justify-evenly"> 
-                          <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                          <i class="fa-solid fa-coins fa-xs"></i>
-                      </div>
-                      <div class="flex flex-col gap-y-1 grow">
-                          <p class="text-xs">123 King Street, London, England </p> 
-                          <p class="text-xs"> $1,999 / night</p>
-                      </div>
-                      <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                  </div>
-                  </div> <!-- div end for bottom half of individual box -->
-              </div> <!-- div end for listing box -->
-
-              <!-- div for individual box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                  <!-- make the inside of every box a flex box with 2 rows -->
-                  <div class="h-1/2 overflow-hidden">
-                      <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/4f/80/7c/4f807c68323c59167143bad9c8f0a4c3.jpg">
-                  </div>
-
-                  <!-- flex box for bottom half of box text-->
-                  <div class="h-1/2 p-3">
-                      <!-- div for title and rating -->
-                      <div class="flex justify-between">
-                          <p class="text-[13px] mb-2"> Bath House (1 Bed 1 Bath) </p>
-                          <div class="flex">
-                              <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                              <p class="text-xs bold ml-1 "> 4.5 </p>
-                              <p class="text-xs ml-0.5"> (67) </p>
-                          </div>
-                      </div>
-
-                      <!-- div for left half, includes icons address and cost-->
-                      <div class="flex gap-2">
-                          <div class="flex flex-col gap-y-1 justify-evenly"> 
-                              <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
-                              <i class="fa-solid fa-coins fa-xs"></i>
-                          </div>
-                          <div class="flex flex-col gap-y-1 grow">
-                              <p class="text-xs">123 Bath Street, Bath, England </p> 
-                              <p class="text-xs"> $99 / night</p>
-                          </div>
-                          <div class="text-xs text-midgreen underline flex self-end"> see more </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- div for add section box-->
-              <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow shrink-0 grid grid-cols-1 place-content-center justify-items-center"> 
-                  <i class="fa-solid fa-square-plus fa-5x mb-2"></i>
-                  <p> Add a new reservation </p>
-              </div>
-              
-          </div> <!-- end for all reservations horizontal scroll -->
-
-      </div> <!-- end for all reservations section -->
+        </div> <!-- end div for reservation table -->
 
       </div> <!-- end div for main contents of page -->
 
-      </div>
+    </div> <!-- end div for page container -->
   </main>
 
 </body>
