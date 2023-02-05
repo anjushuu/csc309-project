@@ -7,32 +7,117 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://kit.fontawesome.com/6f36eef116.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+
   <link href="/dist/output.css" rel="stylesheet" type="text/css">
   
  
 </head>
 <body>
     <!-- nav bar -->
-  <header class="sticky top-0 z-[999]">
+    <header class="sticky top-0 z-[999]">
       <nav class="bg-lightgreen text">
           <!-- flex box for whole bar -->
         <div class="flex mx-5 justify-between">
             <!-- primary links -->
             <div class="flex space-x-1 items-center">
                 <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="index" href="index.html">Search</a>
-                <a class="flex items-center py-4 px-5 font-bold" id="listings" href="listings.html">My Listings</a>
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="listings" href="listings.html">My Listings</a>
                 <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="bookings" href="bookings.html">My Reservations</a>
             </div>
 
             <!-- secondary links -->
             <div class="flex space-x-1 items-center">
-                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="log out" href="index.html">Log Out</a>
-                <!-- change this to icon later -->
-                <a class="hover:text-darkgreen" href="profile.html"><i class="fa-solid fa-user fa-xl"></i> </a>
+              <ul class="flex items-center">
+                <li class="flex items-center">
+                  <button id="notifButton" data-dropdown-toggle="notifDropdown" class="inline-flex justify-center items-center text-sm font-medium text-center hover:text-darkgreen focus:outline-none" type="button"> 
+                    <svg class="w-[30px] h-[30px]" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                    <div class="relative flex">
+                      <div class="relative inline-flex w-3 h-3 bg-red-500 border-2 border-white rounded-full -top-2 right-3"></div>
+                    </div>
+                  </button>
+                    <!-- Dropdown menu -->
+                    <div id="notifDropdown" class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow" aria-labelledby="notifButton">
+                      <div class="block px-4 py-2 font-medium text-center rounded-t-md bg-darkgreen text-white">
+                          Notifications
+                      </div>
+                      
+                      <div class="divide-y divide-gray-100">
+
+                        <!-- booking request notif -->
+                        <a href="#" class="flex px-4 py-3 hover:bg-gray-100 ">
+                          <div class="flex-shrink-0 text-lightblue">
+                            <i class="fa-solid fa-house"></i>
+                          </div>
+                          <div class="w-full pl-3">
+                              <div class="text-gray-500 text-sm mb-1.5 ">New booking request from <span class="font-medium text-gray-900">Zonke</span> for <span class="font-semibold text-gray-900"> General Farm (3 bed 2 bath)</span></div>
+                              <div class="text-xs text-blue-600">a few moments ago</div>
+                          </div>
+                        </a>
+
+                        <!-- booking approval notif -->
+                        <a href="#" class="flex px-4 py-3 hover:bg-gray-100 ">
+                          <div class="flex-shrink-0 text-lightblue">
+                            <i class="fa-solid fa-house"></i>
+                          </div>
+                          <div class="w-full pl-3">
+                              <div class="text-gray-500 text-sm mb-1.5 ">The host for <span class="font-semibold text-gray-900">Luxurious Lodge</span> has approved your booking request!</div>
+                              <div class="text-xs text-blue-600 ">10 minutes ago</div>
+                          </div>
+                        </a>
+
+                        <!-- comment notif -->
+                        <a href="#" class="flex px-4 py-3 hover:bg-gray-100 ">
+                          <div class="flex-shrink-0 text-lightblue"> 
+                            <i class="fa-solid fa-comment"></i>                           
+                          </div>
+                          <div class="w-full pl-3">
+                              <div class="text-gray-500 text-sm mb-1.5 "><span class="font-semibold text-gray-900 ">Smonke Smonke</span> commented on your listing: "Beautiful home - I had a comfortable stay!"</div>
+                              <div class="text-xs text-blue-600 ">44 minutes ago</div>
+                          </div>
+                        </a>
+                        
+                      </div>
+                    </div>
+
+
+                  <!-- Dropdown menu -->
+                  <div id="notifDropdown" class="z-10 hidden bg-white rounded-md shadow w-44">
+                      <ul class="py-2 text-sm text-gray-700 " aria-labelledby="notifButton">
+                        <ul class="py-2 text-sm" aria-labelledby="notifButton">
+                          <li>
+                            <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">My Profile</a>
+                          </li>
+    
+                          <li>
+                            <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">Edit Profile</a>
+                          </li>
+                        </ul>
+                      </ul>
+                  </div>
+                </li>
+                <li>
+                  <button id="profileButton" data-dropdown-toggle="profileDropdown" class="px-4 py-2 hover:text-darkgreen"><i class="fa-solid fa-user fa-xl"></i> </button>
+                  <div id="profileDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44">
+                    <ul class="py-2 text-sm" aria-labelledby="profileButton">
+                      <li>
+                        <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">My Profile</a>
+                      </li>
+
+                      <li>
+                        <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">Edit Profile</a>
+                      </li>
+                    </ul>
+                    <div class="py-2">
+                      <a href="login.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">Sign out</a>
+                    </div>
+                </div>
+                </li>
+              </ul>
             </div>
         </div>
       </nav>
-  </header>
+    </header>
 
   <main>
     <!-- container div -->
@@ -40,7 +125,7 @@
         <!-- left menu column div -->
       <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
           <!-- left menu contents -->
-          <a class="self-start" href="listings.html"> My Rental Listings </a>
+          <a class="self-start" href="listings.html"> Dashboard </a>
           <a class="text-darkgreen font-semibold self-start" href="listings_requests.html"> Requests </a>
           <a class="self-start" href="all_listings.html"> All Listings </a>
           <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
@@ -111,6 +196,7 @@
       </div> <!-- end div for main contents of page -->
     </div> <!-- end div container for page -->
   </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
 </body>
 </html>
