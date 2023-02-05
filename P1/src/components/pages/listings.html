@@ -13,8 +13,8 @@
 </head>
 <body>
     <!-- nav bar -->
-  <header>
-      <nav class="bg-lightgreen text-gray-700">
+  <header class="sticky top-0 z-[999]">
+      <nav class="bg-lightgreen text">
           <!-- flex box for whole bar -->
         <div class="flex mx-5 justify-between">
             <!-- primary links -->
@@ -40,16 +40,12 @@
         <!-- left menu column div -->
       <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
           <!-- left menu contents -->
-          <a class="self-start font-bold" href="listings.html"> My Rental Listings </a>
-          <a class="text-darkgreen font-semibold" href="all_listings.html"> All Listings </a>
+          <a class="self-start font-semibold text-darkgreen" href="listings.html"> My Rental Listings </a>
+          <a class="self-start" href="listings_requests.html"> Requests </a>
+          <a class="self-start" href="all_listings.html"> All Listings </a>
+          <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
+          <a class="self-start" href="unreserved_listings.html"> Unreserved Listings </a>
           <a class="self-start" href="bookings.html"> My Reservations </a> 
-          <a> Pending </a>
-          <a> Denied </a>
-          <a> Expired </a>
-          <a> Approved </a>
-          <a> Canceled </a>
-          <a> Terminated </a>
-          <a> Completed </a>
           <a class="self-start"> My Comments </a> 
           <a class="self-start"> Settings </a>
       </div> <!-- end div for menu column -->
@@ -69,9 +65,9 @@
         <!-- new requests div -->
         <div class="w-full mb-10">
           <!-- div for requests heading, and view all button -->
-          <div class="flex items-center mb-3">
+          <div class="flex items-center justify-between mb-3">
             <h1 class="flex-none font-bold text-2xl"> New Requests: </h1>
-            <a class="text-darkgreen text-[13px] font-semibold flex grow ml-10 hover:text-lightgreen"
+            <a class="text-darkgreen text-[13px] font-semibold hover:text-lightgreen"
             href="listings.html"> VIEW ALL </a>
           </div> <!-- end of div for heading and buttons -->
 
@@ -120,18 +116,25 @@
 
         <!-- reserved listings div -->
         <div class="w-full mb-10"> 
-          <h1 class="text-2xl font-bold"> Reserved Listings: </h1>
-          <p> You don't currently have any listings that have been reserved. </p>
+          <div class="flex items-center justify-between mb-3">
+            <h1 class="flex-none text-2xl font-bold"> Uneserved Listings: </h1>
+            <a class="text-darkgreen text-[13px] font-semibold hover:text-lightgreen"
+            href="unreserved_listings.html"> VIEW ALL </a>
+          </div>
+          <span class="flex">
+            <p> All of your listings have been reserved. </p>
+            <a class="underline text-darkgreen ml-1"> Add a new listing? </a>
+        </span>
         </div>
         
 
         <!-- unbooked listings div -->
         <div class="w-full mb-10">
           <!-- div for listings heading, and view all button -->
-          <div class="flex items-center mb-3">
-            <h1 class="flex-none font-bold text-2xl"> Unreserved Listings: </h1>
-            <a class="text-darkgreen text-[13px] font-semibold flex grow ml-10 hover:text-lightgreen"
-            href="listings.html"> VIEW ALL </a>
+          <div class="flex items-center justify-between mb-3">
+            <h1 class="flex-none font-bold text-2xl"> Reserved Listings: </h1>
+            <a class="text-darkgreen text-[13px] font-semibold hover:text-lightgreen"
+            href="reserved_listings.html"> VIEW ALL </a>
           </div> <!-- end of div for heading and buttons -->
 
           <!-- div for unreserved boxes horizontal scroll -->

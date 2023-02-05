@@ -42,8 +42,8 @@
           <!-- left menu contents -->
           <a class="self-start" href="listings.html"> My Rental Listings </a>
           <a class="self-start" href="listings_requests.html"> Requests </a>
-          <a class="text-darkgreen font-semibold self-start" href="all_listings.html"> All Listings </a>
-          <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
+          <a class="self-start" href="all_listings.html"> All Listings </a>
+          <a class="text-darkgreen font-semibold self-start" href="#"> Reserved Listings </a>
           <a class="self-start" href="unreserved_listings.html"> Unreserved Listings </a>
           <a class="self-start" href="bookings.html"> My Reservations </a> 
           <a class="self-start"> My Comments </a> 
@@ -55,7 +55,7 @@
 
         <!-- heading -->
         <div class="w-full flex justify-between">
-            <h1 class="font-bold text-2xl"> Honke Honke's Total Rental Listings: </h1>
+            <h1 class="font-bold text-2xl"> Honke Honke's Reserved Rental Listings: </h1>
             <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
             hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> EDIT </a>
         </div>
@@ -66,16 +66,22 @@
           <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
         </div>
 
-        <p> These are all the listings you have. </p>
+        <p> These are your listings that have been rented. </p>
 
-
-        <!-- div for all requests with vertical scroll -->
+        <!-- div for all reserved listings with vertical scroll -->
         <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-auto mt-5">
 
         <!-- div for individual box-->
         <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow flex flex-col shrink-0"> 
-        <div class="h-1/2 overflow-hidden">
-            <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
+
+            <!-- div for reserved date bar -->
+            <div class="bg-darkgreen h-[36px] w-[220px] rounded-r-lg z-10 text-white text-xs font-semibold absolute mt-5
+                border-1 flex justify-center border"> <p class=" flex items-center"> BOOKED FOR: FEB 1 - FEB 3, 2023 </p>
+            </div>
+
+        <div class="h-1/2 overflow-hidden relative">
+            <img class="object-cover w-full h-full rounded-t-[10px] z-0 relative" 
+            src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
         </div>
 
         <!-- flex box for bottom half of box text-->
@@ -83,17 +89,17 @@
             <!-- div for title and rating -->
             <div class="flex justify-between">
             <p class="text-[13px] mb-2"> Luxurious Lodge (8 Bed 5 Bath) </p>
-            <div class="flex">
+            <div class="flex text-darkgreen">
                 <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                <p class="text-xs bold ml-1 "> 5.0 </p>
-                <p class="text-xs ml-0.5"> (1) </p>
+                <p class="text text-xs bold ml-1 "> 5.0 </p>
+                <p class="text text-xs ml-0.5"> (1) </p>
             </div>
             </div>
 
             <!-- div for left half, includes icons address and cost-->
             <div class="flex gap-2">
-            <div class="flex flex-col gap-y-1 justify-evenly"> 
-                <i class="fa-solid fa-location-dot fa-xs --fa-C7D6E0"></i>
+            <div class="flex flex-col gap-y-1 justify-evenly text-lightblue"> 
+                <i class="fa-solid fa-location-dot fa-xs"></i>
                 <i class="fa-solid fa-coins fa-xs"></i>
             </div>
             <div class="flex flex-col gap-y-1 grow">
@@ -108,6 +114,12 @@
         <!-- div for individual box-->
         <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow flex flex-col shrink-0"> 
             <!-- make the inside of every box a flex box with 2 rows -->
+
+            <!-- div for reserved date bar -->
+            <div class="bg-darkgreen h-[36px] w-[220px] rounded-r-lg z-10 text-white text-xs font-semibold absolute mt-5
+                border-1 flex justify-center border"> <p class=" flex items-center"> BOOKED FOR: FEB 14 - MAY 4, 2023 </p>
+            </div>
+
             <div class="h-1/2 overflow-hidden">
                 <img class="object-cover w-full h-full object-bottom rounded-t-[10px]" src="https://i.pinimg.com/564x/bd/35/b8/bd35b85d0b34cfc0ba17bc11e1b90508.jpg">
             </div>
@@ -118,9 +130,9 @@
                 <div class="flex justify-between">
                     <p class="text-[13px] mb-2"> General Farm (3 Bed 2 Bath) </p>
                     <div class="flex">
-                        <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
-                        <p class="text-xs bold ml-1 "> 4.8 </p>
-                        <p class="text-xs ml-0.5"> (101) </p>
+                        <i class="fa-solid fa-star fa-2xs mt-0.5 text-lightblue"></i>
+                        <p class="text text-xs bold ml-1 "> 4.8 </p>
+                        <p class="text text-xs ml-0.5"> (101) </p>
                     </div>
                 </div>
 
@@ -142,6 +154,12 @@
         <!-- div for individual box-->
         <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow flex flex-col shrink-0"> 
             <!-- make the inside of every box a flex box with 2 rows -->
+
+            <!-- div for reserved date bar -->
+            <div class="bg-darkgreen h-[36px] w-[220px] rounded-r-lg z-10 text-white text-xs font-semibold absolute mt-5
+                border-1 flex justify-center border"> <p class=" flex items-center"> BOOKED FOR: MAR 24 - APR 1, 2023 </p>
+            </div>
+
             <div class="h-1/2 overflow-hidden">
                 <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/b6/69/f1/b669f19012abdf83f35c8d5b971ad9df.jpg">
             </div>
@@ -175,6 +193,12 @@
 
         <!-- div for individual box-->
         <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow flex flex-col shrink-0"> 
+
+            <!-- div for reserved date bar -->
+            <div class="bg-darkgreen h-[36px] w-[220px] rounded-r-lg z-10 text-white text-xs font-semibold absolute mt-5
+                border-1 flex justify-center border"> <p class=" flex items-center"> BOOKED FOR: JUN 19 - JUN 23, 2023 </p>
+            </div>
+
         <div class="h-1/2 overflow-hidden">
             <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
         </div>
@@ -209,6 +233,12 @@
         <!-- div for individual box-->
         <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow flex flex-col shrink-0"> 
             <!-- make the inside of every box a flex box with 2 rows -->
+
+            <!-- div for reserved date bar -->
+            <div class="bg-darkgreen h-[36px] w-[220px] rounded-r-lg z-10 text-white text-xs font-semibold absolute mt-5
+                border-1 flex justify-center border"> <p class=" flex items-center"> BOOKED FOR: NOV 25 - NOV 27, 2023 </p>
+            </div>
+
             <div class="h-1/2 overflow-hidden">
                 <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/4f/80/7c/4f807c68323c59167143bad9c8f0a4c3.jpg">
             </div>
@@ -238,12 +268,6 @@
                     <div class="text-xs text-midgreen underline flex self-end"> see more </div>
                 </div>
             </div>
-        </div>
-
-        <!-- div for add section box-->
-        <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow shrink-0 grid grid-cols-1 place-content-center justify-items-center"> 
-            <i class="fa-solid fa-square-plus fa-5x mb-2"></i>
-            <p> Add a new listing </p>
         </div>
 
         </div> <!-- end of all rental listings display vertical scroll div -->

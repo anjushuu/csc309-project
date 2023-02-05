@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/6f36eef116.js" crossorigin="anonymous"></script>
+  <link href="/dist/output.css" rel="stylesheet" type="text/css">
+  
+ 
+</head>
+<body>
+    <!-- nav bar -->
+  <header class="sticky top-0 z-[999]">
+      <nav class="bg-lightgreen text">
+          <!-- flex box for whole bar -->
+        <div class="flex mx-5 justify-between">
+            <!-- primary links -->
+            <div class="flex space-x-1 items-center">
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="index" href="index.html">Search</a>
+                <a class="flex items-center py-4 px-5 font-bold" id="listings" href="listings.html">My Listings</a>
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="bookings" href="bookings.html">My Reservations</a>
+            </div>
+
+            <!-- secondary links -->
+            <div class="flex space-x-1 items-center">
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="log out" href="index.html">Log Out</a>
+                <!-- change this to icon later -->
+                <a class="hover:text-darkgreen" href="profile.html"><i class="fa-solid fa-user fa-xl"></i> </a>
+            </div>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <!-- container div -->
+    <div class="p-5 flex">
+        <!-- left menu column div -->
+      <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
+          <!-- left menu contents -->
+          <a class="self-start" href="listings.html"> My Rental Listings </a>
+          <a class="text-darkgreen font-semibold self-start" href="listings_requests.html"> Requests </a>
+          <a class="self-start" href="all_listings.html"> All Listings </a>
+          <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
+          <a class="self-start" href="unreserved_listings.html"> Unreserved Listings </a>
+          <a class="self-start" href="bookings.html"> My Reservations </a> 
+          <a class="self-start"> My Comments </a> 
+          <a class="self-start"> Settings </a>
+      </div> <!-- end div for menu column -->
+
+      <!-- main contents of page -->
+      <div class="w-5/6 pl-5 flex flex-col items-start gap-5">
+
+        <!-- heading -->
+        <div class="w-full flex justify-between">
+            <h1 class="font-bold text-2xl"> Honke Honke's Listing Requests: </h1>
+            <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
+            hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> EDIT </a>
+        </div>
+        
+        
+        <!-- profile picture -->
+        <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black"> 
+          <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
+        </div>
+
+        <p> The following listings have been requested to be rented. </p>
+
+        <!-- div for all reserved listings with vertical scroll -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 overflow-auto mt-5">
+
+        <!-- div for individual box-->
+        <div class="border-2 border-darkgreen rounded-[10px] w-auto h-[201px] drop-shadow flex flex-col shrink-0"> 
+
+        <div class="h-1/2 overflow-hidden relative">
+            <img class="object-cover w-full h-full rounded-t-[10px] z-0 relative" 
+            src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
+        </div>
+
+        <!-- flex box for bottom half of box text-->
+        <div class="h-1/2 p-3">
+            <!-- div for title and rating -->
+            <div class="flex justify-between">
+            <p class="text-[13px] mb-2"> Luxurious Lodge (8 Bed 5 Bath) </p>
+            <div class="flex text-darkgreen">
+                <i class="fa-solid fa-star fa-2xs mt-0.5"></i>
+                <p class="text text-xs bold ml-1 "> 5.0 </p>
+                <p class="text text-xs ml-0.5"> (1) </p>
+            </div>
+            </div>
+
+            <!-- div for left half, includes icons address and cost-->
+            <div class="flex gap-2">
+            <div class="flex flex-col gap-y-1 justify-evenly text-lightblue"> 
+                <i class="fa-solid fa-location-dot fa-xs"></i>
+                <i class="fa-solid fa-coins fa-xs"></i>
+            </div>
+            <div class="flex flex-col gap-y-1 grow">
+                <p class="text-xs">123 King Street, London, England </p> 
+                <p class="text-xs"> $1,999 / night</p>
+            </div>
+            <div class="text-xs text-midgreen underline flex self-end"> see more </div>
+            </div>
+        </div> <!-- div end for bottom half of individual box -->
+        </div> <!-- div end for listing box -->
+
+        </div> <!-- end of all rental listings display vertical scroll div -->
+
+      </div> <!-- end div for main contents of page -->
+    </div> <!-- end div container for page -->
+  </main>
+
+</body>
+</html>

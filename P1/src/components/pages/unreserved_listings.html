@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/6f36eef116.js" crossorigin="anonymous"></script>
+  <link href="/dist/output.css" rel="stylesheet" type="text/css">
+  
+ 
+</head>
+<body>
+    <!-- nav bar -->
+  <header class="sticky top-0 z-[999]">
+      <nav class="bg-lightgreen text">
+          <!-- flex box for whole bar -->
+        <div class="flex mx-5 justify-between">
+            <!-- primary links -->
+            <div class="flex space-x-1 items-center">
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="index" href="index.html">Search</a>
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen font-bold" id="listings" href="listings.html">My Listings</a>
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="bookings" href="bookings.html">My Reservations</a>
+            </div>
+
+            <!-- secondary links -->
+            <div class="flex space-x-1 items-center">
+                <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="log out" href="index.html">Log Out</a>
+                <!-- change this to icon later -->
+                <a class="hover:text-darkgreen" href="profile.html"><i class="fa-solid fa-user fa-xl"></i> </a>
+            </div>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+    <!-- container div -->
+    <div class="p-5 flex">
+        <!-- left menu column div -->
+      <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
+          <!-- left menu contents -->
+          <a class="self-start" href="listings.html"> My Rental Listings </a>
+          <a class="self-start" href="listings_requests.html"> Requests </a>
+          <a class="self-start" href="all_listings.html"> All Listings </a>
+          <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
+          <a class="text-darkgreen font-semibold self-start" href="#"> Unreserved Listings </a>
+          <a class="self-start" href="bookings.html"> My Reservations </a> 
+          <a class="self-start"> My Comments </a> 
+          <a class="self-start"> Settings </a>
+      </div> <!-- end div for menu column -->
+
+      <!-- main contents of page -->
+      <div class="w-5/6 pl-5 flex flex-col items-start gap-5">
+
+        <!-- heading -->
+        <div class="w-full flex justify-between">
+            <h1 class="font-bold text-2xl"> Honke Honke's Unreserved Rental Listings: </h1>
+            <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
+            hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> EDIT </a>
+        </div>
+        
+        
+        <!-- profile picture -->
+        <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black"> 
+          <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
+        </div>
+
+        <span class="flex">
+            <p> All of your listings have been reserved. </p>
+            <a class="underline text-darkgreen ml-1"> Add a new listing? </a>
+        </span>
+
+      </div> <!-- end div for main contents of page -->
+    </div> <!-- end div container for page -->
+  </main>
+
+</body>
+</html>
