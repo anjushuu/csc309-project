@@ -21,7 +21,8 @@
 - search for an icon to use, select only **free** icons, copy the HTML code tag provided and paste into HTML file 
 - to change size, place this attribute : <code> fa-[2xs-2xl, or 1x-10x] </code> in the tag generated
 - colors are changed in the custom CSS file; name the icon <code> fa-[name of icon] </code>, then set a color attribute
-- to change all colors of a specific type of button, use same conventions as above with the type (e.g.: `.fa-solid`
+- to change all colors of a specific type of button, use same conventions as above with the type (e.g.: `.fa-solid`)
+- **update** colors are inherited from text colors in the parent, so when the icon is in a div set the text color in the div and the icon will automatically inherit  this color
 - the fontawesome [documentation](https://fontawesome.com/docs) 
 
 # Have fun developing! 🐵:frog:🎆
