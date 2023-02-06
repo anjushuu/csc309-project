@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/6f36eef116.js" crossorigin="anonymous"></script>
+  <link href="/dist/output.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+ 
+</head>
+<body>
+    <!-- nav bar -->
+    <header class="sticky top-0 z-[999]">
+        <nav class="bg-lightgreen text">
+            <!-- flex box for whole bar -->
+          <div class="flex mx-5 justify-between">
+              <!-- primary links -->
+              <div class="flex space-x-1 items-center">
+                  <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="index" href="index.html">Search</a>
+                  <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="listings" href="listings.html">My Listings</a>
+                  <a class="flex items-center py-4 px-5 hover:text-darkgreen" id="bookings" href="bookings.html">My Reservations</a>
+              </div>
+  
+              <!-- secondary links -->
+              <div class="flex space-x-1 items-center">
+                <ul class="flex items-center">
+                  <li class="flex items-center">
+                    <button id="notifButton" data-dropdown-toggle="notifDropdown" class="inline-flex justify-center items-center text-sm font-medium text-center hover:text-darkgreen focus:outline-none" type="button"> 
+                      <svg class="w-[30px] h-[30px]" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+                      <div class="relative flex">
+                        <div class="relative inline-flex w-3 h-3 bg-red-500 border-2 border-white rounded-full -top-2 right-3"></div>
+                      </div>
+                    </button>
+                      <!-- Dropdown menu -->
+                      <div id="notifDropdown" class="z-20 hidden w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow" aria-labelledby="notifButton">
+                        <div class="block px-4 py-2 font-medium text-center rounded-t-md bg-darkgreen text-white">
+                            Notifications
+                        </div>
+                        
+                        <div class="divide-y divide-gray-100">
+  
+                          <!-- booking request notif -->
+                          <a href="#" class="flex px-4 py-3 hover:bg-gray-100 ">
+                            <div class="flex-shrink-0 text-lightblue">
+                              <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="w-full pl-3">
+                                <div class="text-gray-500 text-sm mb-1.5 ">New booking request from <span class="font-medium text-gray-900">Zonke</span> for <span class="font-semibold text-gray-900"> General Farm (3 bed 2 bath)</span></div>
+                                <div class="text-xs text-blue-600">a few moments ago</div>
+                            </div>
+                          </a>
+  
+                          <!-- booking approval notif -->
+                          <a href="#" class="flex px-4 py-3 hover:bg-gray-100 ">
+                            <div class="flex-shrink-0 text-lightblue">
+                              <i class="fa-solid fa-house"></i>
+                            </div>
+                            <div class="w-full pl-3">
+                                <div class="text-gray-500 text-sm mb-1.5 ">The host for <span class="font-semibold text-gray-900">Luxurious Lodge</span> has approved your booking request!</div>
+                                <div class="text-xs text-blue-600 ">10 minutes ago</div>
+                            </div>
+                          </a>
+  
+                          <!-- comment notif -->
+                          <a href="#" class="flex px-4 py-3 hover:bg-gray-100 ">
+                            <div class="flex-shrink-0 text-lightblue"> 
+                              <i class="fa-solid fa-comment"></i>                           
+                            </div>
+                            <div class="w-full pl-3">
+                                <div class="text-gray-500 text-sm mb-1.5 "><span class="font-semibold text-gray-900 ">Smonke Smonke</span> commented on your listing: "Beautiful home - I had a comfortable stay!"</div>
+                                <div class="text-xs text-blue-600 ">44 minutes ago</div>
+                            </div>
+                          </a>
+                          
+                        </div>
+                      </div>
+  
+  
+                    <!-- Dropdown menu -->
+                    <div id="notifDropdown" class="z-10 hidden bg-white rounded-md shadow w-44">
+                        <ul class="py-2 text-sm text-gray-700 " aria-labelledby="notifButton">
+                          <ul class="py-2 text-sm" aria-labelledby="notifButton">
+                            <li>
+                              <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">My Profile</a>
+                            </li>
+      
+                            <li>
+                              <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">Edit Profile</a>
+                            </li>
+                          </ul>
+                        </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <button id="profileButton" data-dropdown-toggle="profileDropdown" class="px-4 py-2 hover:text-darkgreen"><i class="fa-solid fa-user fa-xl"></i> </button>
+                    <div id="profileDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-md shadow w-44">
+                      <ul class="py-2 text-sm" aria-labelledby="profileButton">
+                        <li>
+                          <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">My Profile</a>
+                        </li>
+  
+                        <li>
+                          <a href="profile.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">Edit Profile</a>
+                        </li>
+                      </ul>
+                      <div class="py-2">
+                        <a href="login.html" class="block px-4 py-2 text-sm hover:bg-lightgreen">Sign out</a>
+                      </div>
+                  </div>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+    </header>
+
+  <main>
+    <!-- container div -->
+    <div class="p-5 flex">
+        <!-- left menu column div -->
+      <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
+          <!-- left menu contents -->
+          <a class="self-start font-semibold text-darkgreen" href="listings.html"> Dashboard </a>
+          <a class="self-start" href="listings_requests.html"> Requests </a>
+          <a class="self-start" href="all_listings.html"> All Listings </a>
+          <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
+          <a class="self-start" href="unreserved_listings.html"> Unreserved Listings </a>
+          <a class="self-start" href="bookings.html"> My Reservations </a> 
+          <a class="self-start"> My Comments </a> 
+          <a class="self-start"> Settings </a>
+      </div> <!-- end div for menu column -->
+
+      <!-- main contents of page -->
+      <form class="w-5/6 pl-5 grid grid-cols-3 p-2 box-border">
+
+        <!-- listing name -->
+        <div class="flex flex-col m-2 gap-2">
+            <label for="listing-title" class="font-semibold"> Listing Name: </label>
+            <input class="appearance-none rounded drop-shadow border-lightblue 
+            focus:shadow-outline focus:outline-darkgreen " 
+            type="text" value="Luxurious Lodge (8 Bed 5 Bath)"
+            name="listing-title" id="listing-title" required>  </input>
+        </div>
+        
+        <!-- price -->
+        <div class="flex flex-col m-2 gap-2"> 
+            <label for="price" class="font-semibold ml-5"> Base Cost:</label>
+            <div class="flex">
+                <i class="fa-solid fa-dollar-sign self-center"></i>
+                <input class="appearance-none rounded drop-shadow border-lightblue 
+                focus:shadow-outline focus:outline-darkgreen ml-2" 
+                type="text" value="1,999" name="price" id="price" required> </input>
+            </div>
+        </div>
+        
+        <!-- service fee, cleaning fee -->
+        <div class="flex m-2 gap-2 box-border"> 
+            <div class="flex flex-col gap-2">
+                <label for="service" class="font-semibold"> Service Fee:</label>
+                <div class="flex">
+                    <i class="fa-solid fa-dollar-sign self-center"></i>
+                    <input class="appearance-none rounded drop-shadow border-lightblue 
+                    focus:shadow-outline focus:outline-darkgreen ml-2 w-full" 
+                    type="text" value="100" name="service" id="service" required> </input>
+                </div>
+            </div>
+            
+            <div class="flex flex-col gap-2">
+                <label for="cleaning" class="font-semibold"> Cleaning:</label>
+                <div class="flex">
+                    <i class="fa-solid fa-dollar-sign self-center"></i>
+                    <input class="appearance-none rounded drop-shadow border-lightblue 
+                    focus:shadow-outline focus:outline-darkgreen ml-2 w-full" 
+                    type="text" value="100" name="cleaning" id="cleaning" required> </input>
+                </div>
+            </div>
+        </div>
+
+        <!-- address -->
+        <div class="flex flex-col m-2 gap-2"> 
+            <label for="address" class="font-semibold"> Address:</label>
+            <input class="appearance-none rounded drop-shadow border-lightblue 
+            focus:shadow-outline focus:outline-darkgreen grow" 
+            type="text" value="123 King Street, London, England" name="address" id="address" required> </input>
+        </div>
+
+        <!-- description -->
+        <div class="flex flex-col m-2 gap-2"> 
+            <label for="description" class="font-semibold"> Description:</label>
+            <input class="appearance-none rounded drop-shadow border-lightblue 
+            focus:shadow-outline focus:outline-darkgreen" 
+            type="text" value="A cozy lodge surrounded by nature" name="description" id="description" required> </input>
+        </div>
+
+        <!-- bedrooms, beds, baths -->
+        <div class="flex m-2 gap-2 box-border"> 
+                <div class="flex flex-col gap-2">
+                    <label for="bedrooms" class="font-semibold"> Bedrooms:</label>
+                    <input class="appearance-none rounded drop-shadow border-lightblue 
+                    focus:shadow-outline focus:outline-darkgreen w-full" 
+                    type="text" value="4" name="bedrooms" id="bedrooms" required> </input>
+                </div>
+                
+                <div class="flex flex-col gap-2">
+                    <label for="beds" class="font-semibold"> Beds:</label>
+                    <input class="appearance-none rounded drop-shadow border-lightblue 
+                    focus:shadow-outline focus:outline-darkgreen w-full" 
+                    type="text" value="8" name="beds" id="beds" required> </input>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label for="baths" class="font-semibold"> Baths:</label>
+                    <input class="appearance-none rounded drop-shadow border-lightblue 
+                    focus:shadow-outline focus:outline-darkgreen w-full" 
+                    type="text" value="5" name="baths" id="baths" required> </input>
+                </div>
+        </div>
+
+        <!-- message from host -->
+        <div class="col-start-1 col-span-3"> 
+            <div class="flex flex-col m-2 gap-2">
+                <label for="message" class="font-semibold"> Message from host:</label>
+                <textarea class="appearance-none rounded drop-shadow border-lightblue 
+                focus:shadow-outline focus:outline-darkgreen w-full md:h-[150px] h-auto" 
+                type="text"
+                name="message" id="message" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+            </div>
+        </div>
+
+        <!-- amenities -->
+        <div class="col-start-1 col-span-3">
+            <div class="mt-12 flex flex-col items-center">
+                <div
+                  class="py-8 px-8 items-center rounded shadow-lg overflow-hidden w-full sm:w-11/12 md:max-w-xl hover:shadow-xl bg-white dark:bg-gray-800">
+                  <div class="flex flex-row justify-start items-center">
+                    <h1 class="text-2xl font-semibold">Amenities:</h1>
+                  </div>
+                  <form action="#" class="mt-8">
+                    <div
+                      class="flex bg-gray-100 p-1 items-center w-full space-x-2 sm:space-x- rounded border border-gray-500 dark:bg-gray-700 dark:border-gray-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 opacity-50 dark:text-gray-100 ml-2" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                      </svg>
+                      <input class="bg-gray-100 outline-none text-sm sm:text-base w-full dark:bg-gray-700 dark:text-gray-200 border-transparent focus:border-transparent focus:ring-0" type="text"
+                        placeholder="Add a tag..." />
+                    </div>
+                  </form>
+              
+                  <div class='my-3 flex flex-wrap -m-1'>
+                    <span
+                      class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300">
+                      Buyer
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3 sm:h-4 sm:w-4 ml-4 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                    <span
+                      class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300 ">
+                      Friend
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3 sm:h-4 sm:w-4 ml-4 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                    <span
+                      class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300">
+                      fast food
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3 sm:h-4 sm:w-4 ml-4 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                    <span
+                      class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300">
+                      dog lover
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3 sm:h-4 sm:w-4 ml-4 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+                    <span
+                      class="m-1 flex flex-wrap justify-between items-center text-xs sm:text-sm bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 rounded px-4 py-2 font-bold leading-loose cursor-pointer dark:text-gray-300">
+                      motocycles
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-3 h-3 sm:h-4 sm:w-4 ml-4 text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"
+                        viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </span>
+              
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        
+        <!-- div for all contents under pictures -->
+        <div class="flex flex-col gap-10">
+
+            <!-- div for amenities -->
+            <div> 
+                <h1 class="text-2xl font-bold mb-2"> Amenities </h1>
+                <div class="flex gap-2">
+                    <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
+                        <i class="fa-solid fa-square-parking"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-fan"></i>
+                        <i class="fa-solid fa-fire"></i>
+                        <i class="fa-solid fa-hot-tub-person"></i>
+                        <i class="fa-solid fa-film"></i>
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="flex flex-col gap-y-1 text">
+                        <p> free parking on premise  </p> 
+                        <p> free wifi </p>
+                        <p> garden view </p>
+                        <p> campfire </p>
+                        <p> hot tub</p>
+                        <p> movie room </p>
+                        <p> coffee machine </p>
+                    </div>
+
+                    <div class="flex flex-col  ml-5 gap-y-1 justify-evenly text-darkgreen"> 
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <i class="fa-solid fa-palette"></i>
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <i class="fa-solid fa-paw"></i>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <i class="fa-solid fa-water-ladder"></i>
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="flex flex-col gap-y-1 grow text">
+                        <p> gym equipment  </p> 
+                        <p> drawing room </p>
+                        <p> kitchen </p>
+                        <p> pet friendly </p>
+                        <p> game consoles available </p>
+                        <p> indoor pool </p>
+                        <p> reading room </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        
+    </form> <!-- end div for main contents of page -->
+    </div> <!-- end div container for page -->
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+</body>
+</html>

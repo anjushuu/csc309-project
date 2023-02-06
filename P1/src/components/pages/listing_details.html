@@ -123,7 +123,7 @@
         <!-- left menu column div -->
       <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
           <!-- left menu contents -->
-          <a class="self-start font-semibold text-darkgreen" href="listings.html"> Dashboard </a>
+          <a class="self-start font-semibold text-darkgreen" href="profile.html"> Dashboard </a>
           <a class="self-start" href="listings_requests.html"> Requests </a>
           <a class="self-start" href="all_listings.html"> All Listings </a>
           <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
@@ -139,7 +139,8 @@
         <!-- heading -->
         <div class="w-full flex justify-between">
             <h1 class="font-bold text-3xl"> Luxurious Lodge (8 Bed 5 Bath) </h1>
-            <a class="px-4 py-1.5 bg-darkgreen hover:bg-lightgreen text-white hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> EDIT </a>
+            <a class="px-4 py-1.5 bg-darkgreen hover:bg-lightgreen text-white hover:text-darkgreen rounded font-semibold text-[14px]" 
+            href="edit_listing_details.html"> EDIT </a>
         </div>
         
         <!-- profile picture with information about host -->
@@ -156,7 +157,7 @@
                 <div class="flex items-center">
                     <i class="fa-solid fa-star mr-2"></i>
                     <div class="flex bottom-0">
-                        <p class="font-semibold text"> 4.8 </p>
+                        <p class="font-semibold text mr-1"> 4.8 </p>
                         <p class="text"> (101) </p>
                     </div>
                 </div>
@@ -224,20 +225,119 @@
 
         </div> <!-- end of pictures scrolling -->
 
-        <h1 class="text-2xl font-bold"> A cozy lodge surrounded by nature </h1>
+        <!-- div for all contents under pictures -->
+        <div class="flex flex-col gap-10">
 
-        <!-- div for descriptions -->
-        <div class="flex gap-2">
-            <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
-                <i class="fa-solid fa-bed"></i>
-                <i class="fa-solid fa-ban"></i>
+            <!-- div for description message and icons -->
+            <div>
+                <h1 class="text-2xl font-bold mb-2"> A cozy lodge surrounded by nature </h1>
+                <!-- div for descriptions -->
+                <div class="flex gap-2">
+                    <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
+                        <i class="fa-solid fa-bed"></i>
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <div class="flex flex-col gap-y-1 grow">
+                        <p class="text"> 4 bedrooms, 8 beds, 5 baths  </p> 
+                        <p class="text"> free cancellation within 48 hours </p>
+                    </div>
+                </div>
             </div>
-            <div class="flex flex-col gap-y-1 grow">
-                <p class="text"> 4 bedrooms, 8 beds, 5 baths  </p> 
-                <p class="text"> free cancellation within 48 hours </p>
+            
+            <!-- div for message from host -->
+            <div>
+                <h1 class="text-2xl font-bold mb-2"> Message from host </h1>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
             </div>
+
+            <!-- div for amenities -->
+            <div> 
+                <h1 class="text-2xl font-bold mb-2"> Amenities </h1>
+                <div class="flex gap-2">
+                    <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
+                        <i class="fa-solid fa-square-parking"></i>
+                        <i class="fa-solid fa-wifi"></i>
+                        <i class="fa-solid fa-fan"></i>
+                        <i class="fa-solid fa-fire"></i>
+                        <i class="fa-solid fa-hot-tub-person"></i>
+                        <i class="fa-solid fa-film"></i>
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="flex flex-col gap-y-1 text">
+                        <p> free parking on premise  </p> 
+                        <p> free wifi </p>
+                        <p> garden view </p>
+                        <p> campfire </p>
+                        <p> hot tub</p>
+                        <p> movie room </p>
+                        <p> coffee machine </p>
+                    </div>
+
+                    <div class="flex flex-col  ml-5 gap-y-1 justify-evenly text-darkgreen"> 
+                        <i class="fa-solid fa-dumbbell"></i>
+                        <i class="fa-solid fa-palette"></i>
+                        <i class="fa-solid fa-kitchen-set"></i>
+                        <i class="fa-solid fa-paw"></i>
+                        <i class="fa-solid fa-gamepad"></i>
+                        <i class="fa-solid fa-water-ladder"></i>
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="flex flex-col gap-y-1 grow text">
+                        <p> gym equipment  </p> 
+                        <p> drawing room </p>
+                        <p> kitchen </p>
+                        <p> pet friendly </p>
+                        <p> game consoles available </p>
+                        <p> indoor pool </p>
+                        <p> reading room </p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- div for pricing -->
+            <div>
+                <h1 class="font-bold text-2xl mb-2"> Pricing </h1>
+                <table>
+                    <tr>
+                        <td class="underline pr-2"> base cost: </td>
+                        <td> $1,999 CAD / night </td>
+                    </tr>
+                    <tr>
+                        <td class="underline pr-2"> cleaning fees: </td>
+                        <td> $100 CAD </td>
+                    </tr>
+                    <tr>
+                        <td class="underline pr-2"> service fees: </td>
+                        <td> $100 CAD </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- div for comments -->
+            <div>
+                <h1 class="text-2xl font-bold mb-2"> 101 Reviews </h1>
+                <div class="flex items-center text-darkgreen">
+                    <i class="fa-solid fa-star mr-2"></i>
+                    <div class="flex bottom-0">
+                        <p class="font-semibold text mr-1"> 4.8 </p>
+                        <p class="text"> / 5.0 </p>
+                    </div>
+                </div>
+                <!-- vertical scrolling for comments -->
+                <div class="flex overflow-auto flex-wrap gap-3">
+
+                </div>
+            </div>
+
         </div>
-
+        
       </div> <!-- end div for main contents of page -->
     </div> <!-- end div container for page -->
   </main>
