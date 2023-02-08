@@ -138,23 +138,26 @@
         <!-- heading -->
         <div class="w-full flex justify-between">
             <h1 class="font-bold text-2xl"> Honke Honke's Reservations: </h1>
-            <a class="px-4 py-1.5 bg-darkgreen hover:bg-lightgreen text-white hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> EDIT </a>
+            <a class="sm:flex w-[62px] h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+            hover:text-darkgreen rounded font-semibold text-[14px] hidden" href="#"> EDIT </a>
         </div>
         
         
         <!-- profile picture div with book button -->
-        <div class="flex gap-5 items-end">
+        <div class="flex gap-5 items-end w-full">
           <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black"> 
             <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
           </div>
-          <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
-            hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> NEW </a>
+          <a class="flex w-[62px] h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+            hover:text-darkgreen rounded font-semibold text-[14px]" href="searchresults.html"> NEW </a>
+          <a class="flex w-[62px] h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+            hover:text-darkgreen rounded font-semibold text-[14px] sm:hidden" href="#"> EDIT </a> 
         </div>
 
         
 
         <!-- div reservations table -->
-        <div class="mt-5 w-full mb-2 h-auto drop-shadow border rounded-xl overflow-hidden">
+        <div class="mt-5 w-full mb-2 h-auto shadow-md border rounded-xl overflow-hidden">
           <!-- reservation table -->
           <table class="w-full table-auto md:table-fixed">
             <thead>
@@ -178,13 +181,13 @@
                 </tr>
 
                 <tr>
-                  <td class="border pl-5 py-3"> <a href="listing_details.html"> Luxurious Lodge (8 Bed 5 Bath) </a></td>
+                  <td class="border pl-5 py-3"> <a href="#"> Luxurious Lodge (8 Bed 5 Bath) </a></td>
                   <td class="border pl-5 py-3"> February 1, 2023 - February 3, 2023 </td>
                   <td class="border pl-5 py-3"> Pending </td>
                 </tr>
 
                 <tr>
-                  <td class="border pl-5 py-3"> <a href="listing_details.html"> Luxurious Lodge (8 Bed 5 Bath) </a></td>
+                  <td class="border pl-5 py-3"> <a href="#"> Luxurious Lodge (8 Bed 5 Bath) </a></td>
                   <td class="border pl-5 py-3"> June 19, 2023 - June 23, 2023 </td>
                   <td class="border pl-5 py-3"> Approved </td>
                 </tr>

@@ -123,9 +123,9 @@
         <!-- left menu column div -->
       <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
           <!-- left menu contents -->
-          <a class="self-start font-semibold text-darkgreen" href="profile.html"> Dashboard </a>
+          <a class="self-start" href="profile.html"> Dashboard </a>
           <a class="self-start" href="listings_requests.html"> Requests </a>
-          <a class="self-start" href="all_listings.html"> All Listings </a>
+          <a class="self-start font-semibold text-darkgreen" href="all_listings.html"> All Listings </a>
           <a class="self-start" href="reserved_listings.html"> Reserved Listings </a>
           <a class="self-start" href="unreserved_listings.html"> Unreserved Listings </a>
           <a class="self-start" href="bookings.html"> My Reservations </a> 
@@ -137,14 +137,14 @@
       <div class="w-5/6 pl-5 flex flex-col items-start gap-5">
 
         <!-- heading -->
-        <div class="w-full flex flex-col gap-2 sm:flex-row sm:justify-between">
-            <h1 class="font-bold text-2xl sm:text-3xl"> Luxurious Lodge (8 Bed 5 Bath) </h1>
-            <a class="self-start px-4 py-1.5 bg-darkgreen hover:bg-lightgreen text-white hover:text-darkgreen rounded font-semibold text-[14px]" 
-            href="edit_listing_details.html"> EDIT </a>
+        <div class="w-full flex justify-between">
+            <h1 class="font-bold text-3xl"> Windmill House (2 Bed 2 Bath) </h1>
+            <a class="px-4 py-1.5 bg-darkgreen hover:bg-lightgreen text-white hover:text-darkgreen rounded font-semibold text-[14px]" 
+            href="add_listing2.html"> EDIT </a>
         </div>
         
         <!-- profile picture with information about host -->
-        <div class="flex flex-col sm:flex-row mb-10">
+        <div class="flex flex-row mb-10">
             <!-- div for profile picture -->
             <div class="mr-5">
                 <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black"> 
@@ -157,8 +157,8 @@
                 <div class="flex items-center">
                     <i class="fa-solid fa-star mr-2"></i>
                     <div class="flex bottom-0">
-                        <p class="font-semibold text mr-1"> 4.8 </p>
-                        <p class="text"> (101) </p>
+                        <p class="font-semibold text mr-1"> 0.0 </p>
+                        <p class="text"> (0) </p>
                     </div>
                 </div>
 
@@ -173,14 +173,14 @@
                 </div>
             </div>
 
-            <div class="flex flex-col text-darkgreen gap-1 justify-end sm:ml-2">
+            <div class="flex flex-col text-darkgreen gap-1 justify-end ml-2">
                 <div class="flex items-center">
                     <i class="fa-solid fa-coins mr-2"></i>
-                    <p class="text"> $1,999 / night</p>
+                    <p class="text"> $501 / night</p>
                 </div>
                 <div class="flex items-center">
                     <i class="fa-solid fa-location-dot mr-2"></i>
-                    <p class="justify-end -bottom-1 text">123 King Street, London, England</p>
+                    <p class="justify-end -bottom-1 text">123 Wind Street, Geneva, Switzerland</p>
                 </div>
             </div>
         </div> <!-- end div for icons and text beside profile -->
@@ -190,33 +190,18 @@
         <div class="w-full flex gap-3 overflow-x-auto mb-3">
 
             <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
+            <div class="border-2 border-darkgreen rounded-[10px] md:w-[308px] md:h-[201px] w-auto h-auto drop-shadow flex flex-col shrink-0"> 
                 <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
+                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/cc/f5/9e/ccf59e7de648b0337b151d969b48a656.jpg">
                 </div>
             </div> <!-- div end for listing box -->
 
             <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
+            <div class="border-2 border-darkgreen rounded-[10px] md:w-[308px] md:h-[201px] w-auto h-auto drop-shadow flex flex-col shrink-0"> 
                 <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/2b/73/35/2b73353336e1724e8a01f40cdfe6ca34.jpg">
+                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/64/ad/1a/64ad1a5346d0f0b3ba1aaae4cdcb9030.jpg">
                 </div>
             </div> <!-- div end for listing box -->
-
-            <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/be/37/c5/be37c53350b0b451e48fe900b6982fb5.jpg">
-                </div>
-            </div> <!-- div end for listing box -->
-
-            <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] w-[308px] h-[201px] drop-shadow flex flex-col shrink-0"> 
-                <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/a6/54/7a/a6547a8f73624024731f64a4fcc03f17.jpg">
-                </div>
-            </div> <!-- div end for listing box -->
-
         </div> <!-- end of pictures scrolling -->
 
         <!-- div for all contents under pictures -->
@@ -224,7 +209,7 @@
 
             <!-- div for description message and icons -->
             <div>
-                <h1 class="text-2xl font-bold mb-2"> A cozy lodge surrounded by nature </h1>
+                <h1 class="text-2xl font-bold mb-2"> Feel the breeze </h1>
                 <!-- div for descriptions -->
                 <div class="flex gap-2">
                     <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
@@ -232,7 +217,7 @@
                         <i class="fa-solid fa-ban"></i>
                     </div>
                     <div class="flex flex-col gap-y-1 grow">
-                        <p class="text"> 4 bedrooms, 8 beds, 5 baths  </p> 
+                        <p class="text"> 2 bedrooms, 2 beds, 2 baths  </p> 
                         <p class="text"> free cancellation within 48 hours </p>
                     </div>
                 </div>
@@ -241,13 +226,7 @@
             <!-- div for message from host -->
             <div>
                 <h1 class="text-2xl font-bold mb-2"> Message from host </h1>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-                    sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p> Enjoy your stay! </p>
             </div>
 
             <!-- div for amenities -->
@@ -256,40 +235,9 @@
                 <div class="flex gap-2">
                     <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
                         <i class="fa-solid fa-square-parking"></i>
-                        <i class="fa-solid fa-wifi"></i>
-                        <i class="fa-solid fa-fan"></i>
-                        <i class="fa-solid fa-fire"></i>
-                        <i class="fa-solid fa-hot-tub-person"></i>
-                        <i class="fa-solid fa-film"></i>
-                        <i class="fa-solid fa-mug-hot"></i>
                     </div>
                     <div class="flex flex-col gap-y-1 text">
                         <p> free parking on premise  </p> 
-                        <p> free wifi </p>
-                        <p> garden view </p>
-                        <p> campfire </p>
-                        <p> hot tub</p>
-                        <p> movie room </p>
-                        <p> coffee machine </p>
-                    </div>
-
-                    <div class="flex flex-col  ml-5 gap-y-1 justify-evenly text-darkgreen"> 
-                        <i class="fa-solid fa-dumbbell"></i>
-                        <i class="fa-solid fa-palette"></i>
-                        <i class="fa-solid fa-kitchen-set"></i>
-                        <i class="fa-solid fa-paw"></i>
-                        <i class="fa-solid fa-gamepad"></i>
-                        <i class="fa-solid fa-water-ladder"></i>
-                        <i class="fa-solid fa-book"></i>
-                    </div>
-                    <div class="flex flex-col gap-y-1 grow text">
-                        <p> gym equipment  </p> 
-                        <p> drawing room </p>
-                        <p> kitchen </p>
-                        <p> pet friendly </p>
-                        <p> game consoles available </p>
-                        <p> indoor pool </p>
-                        <p> reading room </p>
                     </div>
                 </div>
             </div>
@@ -301,33 +249,30 @@
                 <table>
                     <tr>
                         <td class="underline pr-2"> base cost: </td>
-                        <td> $1,999 CAD / night </td>
+                        <td> $501 CAD / night </td>
                     </tr>
                     <tr>
                         <td class="underline pr-2"> cleaning fees: </td>
-                        <td> $100 CAD </td>
+                        <td> $50 CAD </td>
                     </tr>
                     <tr>
                         <td class="underline pr-2"> service fees: </td>
-                        <td> $100 CAD </td>
+                        <td> $50 CAD </td>
                     </tr>
                 </table>
             </div>
 
             <!-- div for comments -->
             <div>
-                <h1 class="text-2xl font-bold mb-2"> 101 Reviews </h1>
+                <h1 class="text-2xl font-bold mb-2"> 0 Reviews </h1>
                 <div class="flex items-center text-darkgreen">
                     <i class="fa-solid fa-star mr-2"></i>
                     <div class="flex bottom-0">
-                        <p class="font-semibold text mr-1"> 4.8 </p>
+                        <p class="font-semibold text mr-1"> 0.0 </p>
                         <p class="text"> / 5.0 </p>
                     </div>
                 </div>
-                <!-- vertical scrolling for comments -->
-                <div class="flex overflow-auto flex-wrap gap-3">
-
-                </div>
+                <p class="mt-8"> No one has left a review or rating on this listing yet. </p>
             </div>
 
         </div>

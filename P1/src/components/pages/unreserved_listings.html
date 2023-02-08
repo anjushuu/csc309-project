@@ -138,21 +138,24 @@
       <div class="w-5/6 pl-5 flex flex-col items-start gap-5">
 
         <!-- heading -->
-        <div class="w-full flex justify-between">
+        <div class="w-full flex flex-col sm:flex-row justify-between">
             <h1 class="font-bold text-2xl"> Honke Honke's Unreserved Rental Listings: </h1>
-            <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
-            hover:text-darkgreen rounded font-semibold text-[14px]" href="#"> EDIT </a>
+            <a class="sm:flex w-[62px] h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+            hover:text-darkgreen rounded font-semibold text-[14px] mt-2 sm:mt-0 hidden" href="#"> EDIT </a>
         </div>
-        
         
         <!-- profile picture -->
-        <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black"> 
-          <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
+        <div class="flex gap-3 items-end justify-between w-full">
+          <div class="h-[88px] w-[88px] rounded overflow-hidden bg-black"> 
+            <img class="object-cover w-full h-full object-bottom" src="https://i.pinimg.com/564x/aa/3d/49/aa3d499ad2ef681265afcd840e2079d3.jpg">
+          </div>
+          <a class="flex w-[62px] h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+             hover:text-darkgreen rounded font-semibold text-[14px] sm:hidden" href="#"> EDIT </a> 
         </div>
 
-        <span class="flex">
+        <span class="flex flex-col sm:flex-row">
             <p> All of your listings have been reserved. </p>
-            <a class="underline text-darkgreen ml-1"> Add a new listing? </a>
+            <a class="underline text-darkgreen ml-1" href="add_listing.html"> Add a new listing? </a>
         </span>
 
       </div> <!-- end div for main contents of page -->

@@ -117,8 +117,92 @@
         </nav>
     </header>
 
-  <main>
-      <div class="p-1 md:p-5 flex">
+  <main class="relative">
+    <!-- dialogue box that floates on top of everything -->
+    <div class="z-[900] w-auto h-[500px] border-2 border-darkgreen bg-white rounded-[10px] shadow-md inset-x-[200px] top-3 absolute
+    flex flex-col"> 
+
+        <div class="h-1/5 overflow-hidden relative">
+            <img class="object-cover w-full h-full rounded-t-[10px] z-0 relative" 
+            src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
+        </div>
+
+        <!-- flex box for title and description -->
+        <div class="px-10 py-5">
+            <p class="text-2xl font-bold mb-2"> Luxurious Lodge (8 Bed 5 Bath) </p>
+
+            <!-- div for icons address and cost-->
+            <div class="flex gap-2">
+                <div class="flex flex-col gap-y-1 justify-evenly text-darkgreen"> 
+                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="flex flex-col gap-y-1 grow">
+                    <p class="text-[13px]">123 King Street, London, England </p> 
+                    <p class="text-[12.5px]"> $1,999 / night</p>
+                </div>
+            </div>
+        </div> <!-- div end for title and description -->
+
+        <!-- div for zonke wants to rent text -->
+        <div class="px-10 mb-5 flex gap-1.5 items-center">
+            <!-- zonke's profile picture -->
+            <div class="h-[40px] w-[40px] overflow-hidden relative rounded-full mr-4">
+                <img class="object-cover w-full h-full z-0 relative" 
+                src="https://i.pinimg.com/564x/a2/83/f0/a283f0f6440d80926fec735c0924bd46.jpg">
+            </div>
+            <p class="font-bold text-xl"> Zonke Zonke </p>
+            <p> wants to rent this property from </p>
+            <p class="font-semibold text-darkgreen border rounded-[10px] border-darkgreen h-auto p-1 box-border"> FEB 12, 2023 - FEB 26, 2023</p>
+        </div> <!-- end div for zonke wants to rent text -->
+
+        <!-- div for text and icons -->
+        <div class="px-10 mb-5 flex gap-3 items-center">
+            <div class="flex flex-col gap-3 text-darkgreen">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-user-group"></i>
+                <i class="fa-solid fa-paw"></i>
+                <i class="fa-solid fa-person-circle-exclamation"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="flex flex-col gap-2.5 text-[12.5px]">
+                <div class="flex gap-1"> 
+                    <p> This user has rented one of your properties before.</p>
+                    <a class="text-darkgreen underline"> See comments.</a>
+                </div>
+                <div class="flex gap-1">
+                    <p class="font-semibold">Number of guests:</p>
+                    <p> 3 </p>
+                </div>
+                <div class="flex gap-1">
+                    <p class="font-semibold">Pets:</p>
+                    <p> N/A </p>
+                </div>
+                <div class="flex gap-1">
+                    <p class="font-semibold">Special Considerations or Acommodations:</p>
+                    <p> N/A </p>
+                </div>
+                <div class="flex gap-1 underline">
+                    <p class="font-semibold">3.2</p>
+                    <p> (8) </p>
+                </div>
+            </div> 
+        </div> <!-- end div for icons and text -->
+
+        <!-- buttons -->
+        <div class="grid grid-cols-3">
+            <div class="col-start-2 col-span-1 flex justify-evenly">
+                <button class="flex w-[50px] h-[23px] sm:w-[62px] sm:h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+                 hover:text-darkgreen rounded font-semibold  text-xs sm:text-[14px]"
+                 > <a href="accepted_request.html">ACCEPT</a> </button>
+                 <button class="flex w-[50px] h-[23px] sm:w-[62px] sm:h-[35px] items-center justify-center bg-darkgreen text-white hover:bg-lightgreen 
+                 hover:text-darkgreen rounded font-semibold  text-xs sm:text-[14px]"> <a href="reserved_listings.html">DENY</a> </button>
+            </div>
+        </div>
+    </div> <!-- div end for dialogue box -->
+
+    <!-- everything else -->
+      <div class="p-1 md:p-5 flex z-0">
         <!-- left menu column div -->
         <div class="profile-menu w-1/6 bg-lightgray/[.2] p-7 h-screen flex flex-col flex-start items-center rounded gap-5"> 
             <!-- left menu contents -->

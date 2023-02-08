@@ -134,14 +134,14 @@
       </div> <!-- end div for menu column -->
 
       <!-- main contents of page -->
-      <form class="w-5/6 pl-5 grid grid-cols-3 p-2 box-border" action="edited_listing.html">
+      <form class="w-5/6 pl-5 grid grid-cols-3 p-2 box-border" action="listing_details2.html">
 
         <!-- listing name -->
         <div class="flex flex-col m-2 gap-2">
             <label for="listing-title" class="font-semibold"> Listing Name: </label>
             <input class="appearance-none rounded drop-shadow border-lightblue 
             focus:shadow-outline focus:outline-darkgreen " 
-            type="text" value="Luxurious Lodge (8 Bed 5 Bath)"
+            type="text" value="Windmill House"
             name="listing-title" id="listing-title" required>  </input>
         </div>
         
@@ -152,7 +152,7 @@
                 <i class="fa-solid fa-dollar-sign self-center"></i>
                 <input class="appearance-none rounded drop-shadow border-lightblue 
                 focus:shadow-outline focus:outline-darkgreen ml-2" 
-                type="text" value="1999" name="price" id="price" required> </input>
+                type="text" value="501" name="price" id="price" required> </input>
             </div>
         </div>
         
@@ -164,7 +164,7 @@
                     <i class="fa-solid fa-dollar-sign self-center"></i>
                     <input class="appearance-none rounded drop-shadow border-lightblue 
                     focus:shadow-outline focus:outline-darkgreen ml-2 w-full" 
-                    type="text" value="100" name="service" id="service" required> </input>
+                    type="text" value="50" name="service" id="service" required> </input>
                 </div>
             </div>
             
@@ -174,7 +174,7 @@
                     <i class="fa-solid fa-dollar-sign self-center"></i>
                     <input class="appearance-none rounded drop-shadow border-lightblue 
                     focus:shadow-outline focus:outline-darkgreen ml-2 w-full" 
-                    type="text" value="100" name="cleaning" id="cleaning" required> </input>
+                    type="text" value="50" name="cleaning" id="cleaning" required> </input>
                 </div>
             </div>
         </div>
@@ -184,7 +184,7 @@
             <label for="address" class="font-semibold"> Address:</label>
             <input class="appearance-none rounded drop-shadow border-lightblue 
             focus:shadow-outline focus:outline-darkgreen grow" 
-            type="text" value="123 King Street, London, England" name="address" id="address" required> </input>
+            type="text" value="123 Wind Street, Geneva, Switzerland" name="address" id="address" required> </input>
         </div>
 
         <!-- description -->
@@ -192,7 +192,7 @@
             <label for="description" class="font-semibold"> Description:</label>
             <input class="appearance-none rounded drop-shadow border-lightblue 
             focus:shadow-outline focus:outline-darkgreen" 
-            type="text" value="A cozy lodge surrounded by nature" name="description" id="description" required> </input>
+            type="text" value="Feel the breeze" name="description" id="description" required> </input>
         </div>
 
         <!-- bedrooms, beds, baths -->
@@ -201,21 +201,21 @@
                     <label for="bedrooms" class="font-semibold"> Bedrooms:</label>
                     <input class="appearance-none rounded drop-shadow border-lightblue 
                     focus:shadow-outline focus:outline-darkgreen w-full" 
-                    type="text" value="4" name="bedrooms" id="bedrooms" required> </input>
+                    type="text" value="2" name="bedrooms" id="bedrooms" required> </input>
                 </div>
                 
                 <div class="flex flex-col gap-2">
                     <label for="beds" class="font-semibold"> Beds:</label>
                     <input class="appearance-none rounded drop-shadow border-lightblue 
                     focus:shadow-outline focus:outline-darkgreen w-full" 
-                    type="text" value="8" name="beds" id="beds" required> </input>
+                    type="text" value="2" name="beds" id="beds" required> </input>
                 </div>
 
                 <div class="flex flex-col gap-2">
                     <label for="baths" class="font-semibold"> Baths:</label>
                     <input class="appearance-none rounded drop-shadow border-lightblue 
                     focus:shadow-outline focus:outline-darkgreen w-full" 
-                    type="text" value="5" name="baths" id="baths" required> </input>
+                    type="text" value="2" name="baths" id="baths" required> </input>
                 </div>
         </div>
 
@@ -226,7 +226,7 @@
                 <textarea class="appearance-none rounded drop-shadow border-lightblue 
                 focus:shadow-outline focus:outline-darkgreen w-full md:h-[150px] h-auto" 
                 type="text"
-                name="message" id="message" required>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                name="message" id="message" required>Enjoy your stay!</textarea>
             </div>
         </div>
 
@@ -273,21 +273,21 @@
           <!-- add amenity button -->
           <div class="flex items-center justify-start self-start mt-10 ml-2">
             <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
-            hover:text-darkgreen rounded font-semibold text-[14px] justify-center items-center" href="edit_listing_details_new_amenity.html"> ADD </a>
+            hover:text-darkgreen rounded font-semibold text-[14px] justify-center items-center" href="#"> ADD </a>
           </div>
         </div>
 
         <!-- free cancellation -->
         <div class="flex flex-col gap-2 m-2">
-          <p class="font-semibold"> Free cancellation within 48 hours? </p>
-          <div>
-              <input type="radio" name="free-cancel" id="free-cancel" value="yes">
-              <label for="free-cancel" class="ml-1"> Yes </label>
-          </div>
-          <div>
-              <input type="radio" name="free-cancel" id="free-cancel" value="no">
-              <label for="free-cancel" class="ml-1"> No </label>
-          </div>
+            <p class="font-semibold"> Free cancellation within 48 hours? </p>
+            <div>
+                <input type="radio" name="free-cancel" id="free-cancel" value="yes">
+                <label for="free-cancel" class="ml-1"> Yes </label>
+            </div>
+            <div>
+                <input type="radio" name="free-cancel" id="free-cancel" value="no">
+                <label for="free-cancel" class="ml-1"> No </label>
+            </div>
         </div>
 
         <!-- listing all existing amenities -->
@@ -295,47 +295,17 @@
             <!-- div for amenities -->
                 <div class="flex gap-2 self-start border border-gray-300 box-border py-4 px-4 rounded ml-2 w-auto
                 shadow-md">
-                    <div class="flex flex-col justify-between items-center text-rose-500 my-1"> 
+                    <div class="flex flex-col text-rose-500 mt-1">
                         <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                    </div>
-                    <div class="flex flex-col gap-1.5 text">
-                        <p> free parking on premise  </p> 
-                        <p> free wifi </p>
-                        <p> garden view </p>
-                        <p> campfire </p>
-                        <p> hot tub</p>
-                        <p> movie room </p>
-                        <p> coffee machine </p>
                     </div>
 
-                    <div class="flex flex-col  ml-5 justify-between text-rose-500 my-1"> 
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
-                        <i class="fa-solid fa-circle-minus"></i>
+                    <div class="flex flex-col text">
+                        <p> free parking on premise </p>
                     </div>
-                    <div class="flex flex-col gap-1.5 text">
-                        <p> gym equipment  </p> 
-                        <p> drawing room </p>
-                        <p> kitchen </p>
-                        <p> pet friendly </p>
-                        <p> game consoles available </p>
-                        <p> indoor pool </p>
-                        <p> reading room </p>
-                    </div>
-
-                    <div class="flex self-end mt-10 ml-14">
+                
+                    <div class="flex self-center mt-10 ml-14">
                       <a class="px-4 py-1.5 bg-darkgreen text-white hover:bg-lightgreen 
-                      hover:text-darkgreen rounded font-semibold text-[14px] items-end" href="edit_listing_details_new_amenity.html"> SAVE </a>
+                      hover:text-darkgreen rounded font-semibold text-[14px] items-end"> SAVE </a>
                     </div>
                 </div> <!-- end div for amenities box -->
         </div> <!-- end div for listing all existing amenities -->
@@ -343,43 +313,10 @@
         <!-- editing images -->
         <div class="col-start-1 col-span-3">
           <label for="images" class="font-semibold"> Edit Gallery:</label>
-        
-          <!-- div for all pictures -->
-          <div class="md:w-full w-auto flex justify-between flex-wrap gap-y-3 mt-2">
-            <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] md:w-[308px] md:h-[201px] w-auto h-auto drop-shadow flex flex-col shrink-0"> 
-                <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/originals/96/2c/ca/962ccaffb1ddcff5ab8fc1071507cb9c.gif">
-                </div>
-            </div> <!-- div end for listing box -->
-
-            <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] md:w-[308px] md:h-[201px] w-auto h-auto drop-shadow flex flex-col shrink-0"> 
-                <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/2b/73/35/2b73353336e1724e8a01f40cdfe6ca34.jpg">
-                </div>
-            </div> <!-- div end for listing box -->
-
-            <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] md:w-[308px] md:h-[201px] w-auto h-auto drop-shadow flex flex-col shrink-0"> 
-                <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/be/37/c5/be37c53350b0b451e48fe900b6982fb5.jpg">
-                </div>
-            </div> <!-- div end for listing box -->
-
-            <!-- div for individual picture-->
-            <div class="border-2 border-darkgreen rounded-[10px] md:w-[308px] md:h-[201px] w-auto h-auto drop-shadow flex flex-col shrink-0"> 
-                <div class="h-full overflow-hidden">
-                    <img class="object-cover w-full h-full rounded-t-[10px]" src="https://i.pinimg.com/564x/a6/54/7a/a6547a8f73624024731f64a4fcc03f17.jpg">
-                </div>
-            </div> <!-- div end for listing box -->
-
-            <div class="flex flex-col self-end">
+    
+            <div class="flex flex-col self-end mt-2">
               <input class="rounded text-gray-500 border border-gray-300" type="file" multiple accept="image/*" name="images" id="images"> </input>
             </div>
-            
-
-          </div> <!-- end of pictures -->
         </div>
 
         <!-- submit -->
