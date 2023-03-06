@@ -25,6 +25,13 @@
 - **update** colors are inherited from text colors in the parent, so when the icon is in a div set the text color in the div and the icon will automatically inherit  this color
 - the fontawesome [documentation](https://fontawesome.com/docs) 
 
+
+## Phase 2: DJANGO REST APIS
+
+### Installation Guide
+- `cd` into `restify` and run `pip install packages.txt` or `pip3 install packages.txt` depending on your Python; if this doesn't work I do not know how to help because my own Python is quite broken
+- if the previous thing doesn't work, you could try running `run.sh`, this should automatically set up the virtual environment and install all required packages, if this does not work, run each command separately in the file, I am not sure if this script works yet
+
 # Have fun developing! 🐵:frog:🎆
 
   
